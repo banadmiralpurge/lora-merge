@@ -1,0 +1,50 @@
+{
+    "name":  "lora-merge",
+    "logo":  "🧬",
+    "exe":  "LoraMerge.exe",
+    "desc":  "Free, open-source LoRA merger for Windows — blend adapters into a base model at custom weights, export safetensors. 100 MB portable, MIT.",
+    "topics":  [
+                   "lora",
+                   "merge",
+                   "fine-tuning",
+                   "stable-diffusion",
+                   "llm",
+                   "model-merge",
+                   "ai-tools",
+                   "windows",
+                   "windows-10",
+                   "windows-11",
+                   "csharp",
+                   "dotnet",
+                   "safetensors",
+                   "adapter",
+                   "weights",
+                   "portable",
+                   "open-source",
+                   "mit-license"
+               ],
+    "features":  [
+                     "✅ **Weight sliders per adapter** — stack up to five LoRAs and set each blend ratio from zero to full",
+                     "✅ **Base model safe mode** — merges onto a copy and verifies the output loads before you delete anything",
+                     "✅ **Safetensors in, safetensors out** — keeps metadata and formatting, not a pickle-era mess",
+                     "✅ **Preset library** — save favorite blends under names and rerun them after a base model update",
+                     "✅ **Validation pass** — tensor count and shape check against the base before writing gigabytes",
+                     "✅ **GPU or CPU merge** — uses VRAM when available and falls back to RAM on cards with no headroom",
+                     "✅ **100 MB self-contained exe** — runtime and merge backend bundled, portable, offline, MIT"
+                 ],
+    "compare":  [
+                    "| Feature | **lora-merge** | kohya sd-scripts | PEFT scripts | Web merge tools |",
+                    "|---|:---:|:---:|:---:|:---:|",
+                    "| Price | **Free, MIT** | Free, OSS | Free, OSS | Free accounts |",
+                    "| Open source | **Yes** | Yes | Yes | No |",
+                    "| GUI with per-adapter sliders | **Yes** | Complex config | No | Partial",
+                    "| Five-adapter stacking | **Yes** | Scripted | Scripted | Rare",
+                    "| Blend presets | **Yes** | No | No | No |",
+                    "| Portable, no install | **Yes, 100 MB** | Python env | Python env | Upload required"
+                ],
+    "faqQ":  "how to merge multiple LoRAs into one model offline?",
+    "faqA":  "There is no way around doing it in Python or uploading multi-GB checkpoints to a website. lora-merge stacks up to five adapters with per-adapter weights, validates tensor shapes against the base and writes a clean safetensors file. It is a 100 MB portable exe, MIT, fully offline, and your models never leave the disk.",
+    "s1":  "Dark mixer (#121418, purple #A78BFA): base model card top, five LoRA slots with weight sliders at 0.8, 0.5 and 0.3, output size estimate chip reading 6.2 GB.",
+    "s2":  "Preset shelf: three saved blends with names and slider thumbnails, apply button, diff note reading base updated since last run with warning tint.",
+    "s3":  "Validation and write: tensor check table showing matched counts, progress bar at 74 percent, remember-delete-source checkbox unchecked in red outline."
+}
